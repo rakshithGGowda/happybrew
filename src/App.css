@@ -1,38 +1,126 @@
 .App {
-  text-align: center;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  background-color: transparent;
+  z-index: 1;
+}
+
+
+.header-container{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation{
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 10px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: #FC5404;
+  font-size: .9rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom:0;
+  transition: 0.2s ease-in-out;
+}
+
+.App-logo {
+  width: 42px;
+}
+
+.hero{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  position: relative;
+  background-color: #fdff6d;
+}
+
+.hero-img-container{
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 60vw;
+  height: 80vh;
+  z-index: -1;
+}
+
+.image{ 
+  width: 80%;
+  height: 100%;
+  background-size:     cover; 
+  background-repeat:   no-repeat;
+  background-position: center center;  
+  background-image: url('./images/happybrew-view2.jpg');
+  border-radius: 50px;
+}
+
+.head-line{
+  width: 50vw;
+  margin-left: 7vw;
+}
+.title{
+  font-size: 6rem;
+  color: transparent;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 3px #FC5404;
+  line-height: 15vh;
+}
+
+.book-table-btn{
+  padding: 10px 30px;
+  width:fit-content;
+  border: 3px solid #ff905c;
+  transition: 0.2s ease-in-out;
+  border-radius: 20px;
+}
+
+.container{
+  z-index: 1;
+}
+.book-table-btn:hover{
+  border: 3px solid #FC5404;
+  color: #FC5404;
+  box-shadow: inset 10em 0 0 0 #F7FD04;
+  transform: translateY(-0.40em);
+}
+
+.nav-book-table{
+  transition: 0.15s ease-in-out;
+  padding: 5px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #ff8c57;
+}
+.nav-book-table:hover{
+  box-shadow: inset 0 0 1em rgba(255, 123, 0, 0.767), 0 0 1em rgba(255, 172, 18, 0.5);
+  border: #FC5404 solid 3px;
+  border-radius: 10px;
+}
+
+.explore{
+  min-height: 100vh;
+  background-color: #F9B208;
+}
+
+.navigation a:hover,
+.navigation a:active {
+  letter-spacing: 4px;
+  border-bottom: 1px solid rgb(252, 151, 105, 0.5) ;
 }
