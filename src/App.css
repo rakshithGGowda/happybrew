@@ -48,8 +48,9 @@ a {
   justify-content: space-around;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
-  position: relative;
+  height: 100vh;
+  width: 100%;
+  width: fit-content;
   background-color: #fdff6d;
 }
 
@@ -80,15 +81,16 @@ a {
   font-size: 6rem;
   color: transparent;
   letter-spacing: 2px;
-  -webkit-text-stroke: 3px #FC5404;
+  -webkit-text-stroke: 3px #04acfc;
   line-height: 15vh;
+
 }
 
 .book-table-btn{
   padding: 10px 30px;
   width:fit-content;
-  border: 3px solid #ff905c;
-  transition: 0.2s ease-in-out;
+  border: 3px solid #04acfc;
+  transition: 0.3s ease-in-out;
   border-radius: 20px;
 }
 
@@ -98,8 +100,9 @@ a {
 .book-table-btn:hover{
   border: 3px solid #FC5404;
   color: #FC5404;
-  box-shadow: inset 10em 0 0 0 #F7FD04;
+  box-shadow: inset 10em 2px 2px 2px #ffffff;
   transform: translateY(-0.40em);
+  scale: 1.02;
 }
 
 .nav-book-table{
@@ -122,5 +125,31 @@ a {
 .navigation a:hover,
 .navigation a:active {
   letter-spacing: 4px;
-  border-bottom: 1px solid rgb(252, 151, 105, 0.5) ;
+  border-bottom: 1px solid rgb(4, 172, 252, 0.5) ;
+  color: #04acfc;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .head-line{
+    margin: auto;
+  }
+
+  .container{
+   margin: 10vw;
+  }
+
+  .title{
+    font-size: 4rem;
+    color: #04acfc;
+    -webkit-text-stroke: 0px;
+    line-height: 11vh;
+  }
+
+  .image{
+    width: 90%;
+    height: 90%;
+    background-repeat:   no-repeat;
+    background-position: center left;
+  }
 }

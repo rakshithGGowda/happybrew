@@ -7,7 +7,7 @@ function Hero() {
         <div className="head-line">
         <h1 className='title'>MORE THAN JUST A BAR.</h1>
         <div  className='book-table-btn'>
-        <a href=''>BOOK A TABLE</a>
+        <a href='' style={{color:"#04acfc"}} >CHECK EVENTS</a>
         </div>
         </div>
         <div className="hero-img-container">
