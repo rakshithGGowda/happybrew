@@ -97,7 +97,9 @@ a {
 .container{
   z-index: 1;
 }
-.book-table-btn:hover{
+.book-table-btn:hover,
+.book-table-btn:active
+{
   border: 3px solid #FC5404;
   color: #FC5404;
   box-shadow: inset 10em 2px 2px 2px #ffffff;
@@ -129,21 +131,33 @@ a {
   color: #04acfc;
 }
 
+.nav{
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
 
   .head-line{
     margin: auto;
   }
-
+  .hero{
+    height: 80vh;
+    width: 100%;
+  }
   .container{
    margin: 10vw;
   }
 
+  .hero-img-container{
+    height:50vh;
+    width: 70%;
+    margin: auto;
+  }
   .title{
     font-size: 4rem;
     color: #04acfc;
     -webkit-text-stroke: 0px;
-    line-height: 11vh;
+    line-height: 9vh;
   }
 
   .image{
@@ -152,4 +166,49 @@ a {
     background-repeat:   no-repeat;
     background-position: center left;
   }
+
+  .navigation, .nav-book-table{
+    display: none;
+  }
+
+  .nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #fdff6d;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #eeeeee;
+}
+
+.nav__link--active {
+    color: #009578;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
 }

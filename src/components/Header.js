@@ -5,8 +5,8 @@ function Header() {
   return (
     <header className="App-header">
     <div className='header-container'>
-        <a href=''>
-          <img src={logo} className="App-logo" alt="logo" />
+        <a href='' style={{display:"flex",justifyContent:"center",alignItems:"center",gap:"5px"}}>
+          <img src={logo} className="App-logo" alt="logo" /><h2 style={{display:"inline",}}>Happy Brew</h2>
         </a>
         <nav className="navigation">
             <a href='' >The Venue</a>
