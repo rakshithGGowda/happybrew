@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/happybrew/static/css/main.65fecad7.css",
+    "main.js": "/happybrew/static/js/main.314d8cc5.js",
+    "static/js/787.bc97a63f.chunk.js": "/happybrew/static/js/787.bc97a63f.chunk.js",
+    "static/media/happybrew-view2.jpg": "/happybrew/static/media/happybrew-view2.904c7f3eb5871c88d759.jpg",
+    "static/media/logo.svg": "/happybrew/static/media/logo.0a1f3ad71a582818f07c3571e646bf6a.svg",
+    "index.html": "/happybrew/index.html",
+    "main.65fecad7.css.map": "/happybrew/static/css/main.65fecad7.css.map",
+    "main.314d8cc5.js.map": "/happybrew/static/js/main.314d8cc5.js.map",
+    "787.bc97a63f.chunk.js.map": "/happybrew/static/js/787.bc97a63f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65fecad7.css",
+    "static/js/main.314d8cc5.js"
+  ]
+}
