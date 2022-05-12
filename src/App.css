@@ -76,6 +76,7 @@ a {
 .head-line{
   width: 50vw;
   margin-left: 7vw;
+  animation: fadeInUp ease-in 1s;
 }
 .title{
   font-size: 6rem;
@@ -121,7 +122,66 @@ a {
 
 .explore{
   min-height: 100vh;
-  background-color: #F9B208;
+  background-color: #6f6dff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-content{
+  font-family:"Montserrat";
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  /* animation: fadeInUp ease-in 1s; */
+}
+
+.explore-content-item-img{
+  width: 50%;
+  height: 100%;
+  background-size:     cover; 
+  background-repeat:   no-repeat;
+  background-position: center center;  
+  background-image: url('./images/happybrew-view-hall1.jpg');
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.explore-content-item{
+  width: 35vw;
+  height: 100%;
+  z-index: 1;
+  margin-bottom: 10vh;
+}
+
+.explore-title{
+  z-index: 2;
+  position: relative;
+  margin-top: 15vh;
+}
+
+.explore-img-container{
+  width: 80vh;
+  height: 80vh;
+  position: absolute;
+  margin-left: 40vw;
+  margin-bottom: 20vh;
+}
+
+.explore-image{
+  width: 100%;
+  height: 100%;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  background-image: url('./images/happybrew-view-hall1.jpg');
+  border-radius: 50px;
 }
 
 .navigation a:hover,
@@ -133,6 +193,19 @@ a {
 
 .nav{
   display: none;
+}
+
+
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0.5;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
 }
 
 @media only screen and (max-width: 600px) {
@@ -180,35 +253,35 @@ a {
     background-color: #fdff6d;
     display: flex;
     overflow-x: auto;
-}
+  }
 
-.nav__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    min-width: 50px;
-    overflow: hidden;
-    white-space: nowrap;
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #444444;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: background-color 0.1s ease-in-out;
-}
+  .nav__link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      min-width: 50px;
+      overflow: hidden;
+      white-space: nowrap;
+      font-family: sans-serif;
+      font-size: 13px;
+      color: #444444;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: background-color 0.1s ease-in-out;
+  }
 
-.nav__link:hover {
-    background-color: #eeeeee;
-}
+  .nav__link:hover {
+      background-color: #eeeeee;
+  }
 
-.nav__link--active {
-    color: #009578;
-}
+  .nav__link--active {
+      color: #009578;
+  }
 
-.nav__icon {
-    font-size: 18px;
-}
+  .nav__icon {
+      font-size: 18px;
+  }
 
 }
