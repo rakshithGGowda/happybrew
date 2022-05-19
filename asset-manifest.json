@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/happybrew/static/css/main.9ada62a6.css",
-    "main.js": "/happybrew/static/js/main.843125ae.js",
+    "main.css": "/happybrew/static/css/main.f67643d6.css",
+    "main.js": "/happybrew/static/js/main.b3cab5c4.js",
     "static/js/787.bc97a63f.chunk.js": "/happybrew/static/js/787.bc97a63f.chunk.js",
     "static/media/happybrew-view2.jpg": "/happybrew/static/media/happybrew-view2.904c7f3eb5871c88d759.jpg",
     "static/media/logo.svg": "/happybrew/static/media/logo.0a1f3ad71a582818f07c3571e646bf6a.svg",
+    "static/media/happybrew-view-hall1.jpg": "/happybrew/static/media/happybrew-view-hall1.6693d3e6c2f807dfd2b3.jpg",
     "index.html": "/happybrew/index.html",
-    "main.9ada62a6.css.map": "/happybrew/static/css/main.9ada62a6.css.map",
-    "main.843125ae.js.map": "/happybrew/static/js/main.843125ae.js.map",
+    "main.f67643d6.css.map": "/happybrew/static/css/main.f67643d6.css.map",
+    "main.b3cab5c4.js.map": "/happybrew/static/js/main.b3cab5c4.js.map",
     "787.bc97a63f.chunk.js.map": "/happybrew/static/js/787.bc97a63f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ada62a6.css",
-    "static/js/main.843125ae.js"
+    "static/css/main.f67643d6.css",
+    "static/js/main.b3cab5c4.js"
   ]
 }
